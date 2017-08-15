@@ -1,0 +1,27 @@
+.home
+{
+   
+    height: 100%;
+    width:100%;
+    background-color: pink;
+  
+}
+.home_header
+{
+    height: auto ;
+    width: 100%;
+    background-color: white;
+}
+.home_header1
+{
+ height: auto;
+width: 100%;
+ background-color: grey;
+}
+.home_body
+{
+    height: auto;
+    width:60%;
+    background-color: skyblue;
+    align-items: left;
+}

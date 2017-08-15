@@ -1,0 +1,118 @@
+body
+{
+margin:0px;
+padding:0px;
+background-color: white;
+}
+.home_header
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 120px;
+    width: 98%;
+    background-color: whitesmoke;
+   border-top: 2px green solid;;
+
+}
+
+.userregis
+{
+    float: left;
+    margin-left: 250px;
+    margin-top: 35px;
+    height: 200px;
+    width: 30%;
+    background-color: pink;
+    font-family: cursive;
+    font-size: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.userregis1
+{
+     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.logo
+{
+    float: left;
+    margin-left: -610px;
+    margin-top: 450px;
+    height: 100px;
+    width: 67%;
+    background-color:white;
+    
+}
+.regis_search
+{
+    float: left;
+margin-left: 780px;
+    margin-top: -630px;
+    height:50px;
+    width: 35%;
+    background-color: palevioletred;
+}
+.textfield
+{
+   
+    height: 21px;
+    width:30%;
+    border-bottom-right-radius: 20px;
+    background-color: pink;
+    border-bottom: 2px palevioletred solid;
+    border-right: 2px palevioletred solid;
+    
+}
+.search
+{
+    height: 30px;
+    width: 20%;
+    border-bottom: 2px pink dashed;
+    border-left: 2px palevioletred solid;
+}
+.regiss_design
+{
+    height: 30px;
+    width: 30%;
+    background-color: pink;
+    border-bottom-right-radius: 20px;
+}
+.registration_fields
+{
+    float: left;
+margin-left: 835px;
+margin-top: -545px;
+text-align: left;
+font-size: 18px;
+    height: 565px;
+    width: 30%;
+    background-color: whitesmoke;
+    border: 1px lightseagreen solid;
+    border-radius: 20px;
+}
+.regis_text
+{
+    height: 25px;
+    width: 80%;
+}
+
+.City
+{
+    height: 25px;
+    width: 70%;
+}
+.date
+{
+    height: 25px;
+    width: 20%;
+  
+
+}
+.button_register
+{
+    height: 35px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: lightseagreen;
+}

@@ -1,7 +1,6 @@
 <%-- 
-
-    Document   : userLogin
-    Created on : 21-Jul-2017, 11:53:40 AM
+    Document   : jobs
+    Created on : 8-Aug-2017, 12:31:59 PM
     Author     : Monika
 --%>
 
@@ -10,9 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> ADMIN STUDENT Registration Page</title>
-        <link href="css/StudentRegistration.css" rel="stylesheet" type="text/css"/>
-        <script>
+        <title>Jobs</title>
+    <script>
 
 
 
@@ -104,14 +102,13 @@
     </head>
     <body>
 
-        <div class="registration">
+        <div class="jobs">
 
             <div class="home_header">
                 
 
             </div>
             <div class="studentregis">
-                 <img src="css/images/headerleft.jpg" height="250px"width="100%" class="userregis1">
                  REGISTRATION NOW
             </div>
             <div class="logo">
