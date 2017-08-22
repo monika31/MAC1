@@ -21,9 +21,9 @@ import javax.servlet.http.HttpSession;
 
 /**  
  *
- * 
+ * @author Amandeep kaur
  */
-public class StudentRegistration extends HttpServlet {
+public class NewJob extends HttpServlet {
 
  private Component rootPane;
     private String STATUS;
@@ -43,49 +43,42 @@ public class StudentRegistration extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         HttpSession session= request.getSession();
-        String ID=request.getParameter("StudentID");
-        String FNAME=request.getParameter("StudentFirstName");
-        String MNAME=request.getParameter("StudentMiddleName");
-        String LNAME=request.getParameter("StudentLastName");
-        String EMAIL_ID=request.getParameter("Email_id");
-        String PHONE=request.getParameter("TelePhone");
-        String GENDER=request.getParameter("sex");
-        String STUDENTSTATUS= request.getParameter("StudentStatus");
-        String CURRENT_PAST =request.getParameter("Current_Past");
-        String SEMESTER = request.getParameter("Semester");
-        String YEAR= request.getParameter("Year");
+        String JOBGROUP=request.getParameter("JobGroup");
+        String COMPANY=request.getParameter("Company");
+        String STATUS1= request.getParameter("Status");
+        String POSITION=request.getParameter("Position");
+        String DESCRIPTION=request.getParameter("Description");
+        String REQUIREMENTS=request.getParameter("Requirements");
+        String SALARY=request.getParameter("Salary");
+        
                
      STATUS = request.getParameter("text");
         try {
               
                   Class.forName("com.mysql.jdbc.Driver");
                   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "root", "");
-                  PreparedStatement ps = con.prepareStatement("insert into Registration values(?,?,?,?,?,?,?,?,?,?)");
-                  ps.setString(1,FNAME);
-                  ps.setString(2,MNAME);
-                   ps.setString(3,LNAME);
-                  ps.setString(4,EMAIL_ID);
-                   ps.setString(5,PHONE);
-                    ps.setString(6,GENDER);
-                     ps.setString(7,STUDENTSTATUS);
-                      ps.setString(8,CURRENT_PAST);
-                      ps.setString(9, SEMESTER);
-                      ps.setString(10, YEAR);
+                  PreparedStatement ps = con.prepareStatement("insert into Jobs values(?,?,?,?,?,?,?,?,?)");
+                  ps.setString(1,JOBGROUP);
+                  ps.setString(2,COMPANY);
+                  ps.setString(3,STATUS1); 
+                  ps.setString(4,POSITION);
+                   ps.setString(5,DESCRIPTION);
+                    ps.setString(6,REQUIREMENTS);
+                     ps.setString(7,SALARY);
+                      
                         
                       
                   ps.executeQuery();
-                   session.setAttribute("session_FNAME",FNAME);
-                     session.setAttribute("session_MNAME",MNAME);
-                     session.setAttribute("session_LNAME",LNAME);
-                     session.setAttribute("session_EMAIL_ID",EMAIL_ID);
-                     session.setAttribute("session_PHONE",PHONE);
-                     session.setAttribute("session_GENDER",GENDER);
-                     session.setAttribute("session_STATUS", STUDENTSTATUS);
-                     session.setAttribute("session_CURRENT_PAST", CURRENT_PAST);
-                     session.setAttribute("session_Semester", SEMESTER);
-                     session.setAttribute("session_Year",YEAR );
+                   session.setAttribute("session_JOBGROUP", JOBGROUP);
+                     session.setAttribute("session_COMPANY",COMPANY);
+                     session.setAttribute("session_STATUS1", STATUS1);
+                     session.setAttribute("session_POSITION",POSITION);
+                     session.setAttribute("session_DESCRIPTION",DESCRIPTION);
+                     session.setAttribute("session_REQUIREMENTS",REQUIREMENTS);
+                     session.setAttribute("session_SALARY", SALARY);
+                     
 
-                     response.sendRedirect("Profile.jsp");
+                     response.sendRedirect("NewJob.jsp");
                  
         }
                   catch(IOException | ClassNotFoundException | SQLException e)

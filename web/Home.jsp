@@ -31,6 +31,7 @@
 </script>
     </head>
     <body>
+        
         <div class="home">
             <%
                 String FirstNAME = (String) session.getAttribute("session_FNAME");
@@ -46,7 +47,7 @@
 
             <p class="values">
               
-                <a href="Profile.jsp"> <%=FirstNAME%> </a> <br/>
+                <a href="Students.jsp"> <%=FirstNAME%> </a> <br/>
                   <a href="LogOut"> Logout </a>
             </p>
 
@@ -54,89 +55,115 @@
             <%
                 }
             %>
-            <div class="home_header">
-                <img src="css/images/image1.png" height="250px" width="30%" class="photo">
-            </div>                        
-                
-                
-                </p>
-            <div class="home_header1">
-               
-             <ul>
-                    <a href="Home.jsp">HOME</a>
-                    <a href="login.jsp">Login</a>
-                    <a href="StudentRegistration.jsp">Registration</a>
-                    <a href="Jobs.jsp">Jobs</a>
+            <div class="main">
 
-                </ul>   
+            
+                <div class="home_header">
+                    <div class="upper_left">
+                        <h1>(519)-253-3000</h1>
+                        <h1>email@uwindsor.ca</h1>
+                    </div> 
+                <div class="logo">
+                    <img src="css/images/image14.png" height="100%" width="100%">  
+                </div>
+                    <div class="upper_right">
+                        <a href="AboutUs.jsp">About Us</a> |
+                         <a href="ContactUs.jsp" >Contact Us</a> |
+                          <a href="home.jsp" >Sign In</a> 
+                              
+                   
+                    </div>
+                </div>
                
-               
-            </div>
-                <div class="home_body">
-             <img src="css/images/windsor banner.jpg" height="250px" width="30%" class="photo">
-        </div>
-        <%
-
-            if (Email_id == null) {
-        %>     
-        <div class="home_login">
-            <img src="css/images/User-Administrator-Blue-icon.png" height="50px" width="30%" class="user_login">
-            <form name="myform" action="Userlogin" method="Post" onsubmit="return validateform()">
+                    <div class="nav" >
+                     <ul>
+    <li>
+      <a href="home.jsp">Home</a>
+    </li>
+    <li>
+      <a href="AboutUs.jsp">About</a>
+    </li>
+    <li>
+      <a href="students.jsp">Registration</a>
+    </li>
+    <li>
+        <a href="NewJob.jsp">Jobs</a>
+    </li>
+    <li>
+      <a href="ContactUs.jsp">Contact</a>
+    </li>
+  </ul>
+                    </div>
+                
+                <div class="body">
+                     <img src="css/images/windsor banner.jpg"  class="image1">
+                </div>
+            <div class="content">
+                <div class="left_side">
+                    
+                    <div class="regis_header">
+                        <h1>LOGIN</h1>
+                    </div>
+                   <form name="myform" action="Userlogin" method="Post" onsubmit="return validateform()">
                 <font size="4px"> Email_id:</font> <br>
                 <input type="text" name="Email_Id" class="Sign_indesign" > 
-                <font size="4px"> Password: </font><br>
+                <font size="4px"> <br><br>Password: </font><br>
                 <input type="password" name="Password1" class="Sign_indesign1"><br><br><br>
-                <input type="submit" value="Login" class="button_design">
+                <input type="submit" value="Login" class="button_design"><br><br> |
                 <font size="4px" ><a href="StudentRegistration.jsp"><font color="black">Create New Account </a></font></font>
             </form>
-
-
-
-        </div> 
-        <%         } else {
-        %>
-        <div class="home_login">
-            <img src="css/images/Various-Software-Applications.jpg" height="30px" width="20%" class="img_login">
-            <img height="270" name="slide" src="css/images/about-us-495x290.jpg" width="100%" class="img_login1" />
-            <script language="JavaScript">
-                var i = 0;
-                var path = new Array();
-
-// LIST OF IMAGES
-                path[0] = "css/images/about-us-495x290.jpg";
-                path[1] = "css/images/1415845741.png";
-                path[2] = "css/images/banner_expnsn_pck_nav.gif";
-
-
-
-                function swapImage()
-                {
-                    document.slide.src = path[i];
-                    if (i < path.length - 1)
-                        i++;
-                    else
-                        i = 0;
-                    setTimeout("swapImage()", 3000);
-                }
-                window.onload = swapImage;
-            </script>
-        </div>
-
-
-        <%                          }
-        %>
-        <div class="home_events">
-            <br>  <font size="5px">News & Events</font>
-            <br><br> <img src="css/images/windsor banner.jpg" height="60px" width="20%" class="pic1">
-            <p>
-             Chrome is a young,fast browser that can browse any web page.
-            </p>
-            <br><br><img src="css/images/WhatsApp-for-iOS-header-664x374.jpg"height="60px" width="20%" class="pic2">
-             A few  weeks ago, Android WhatsApp users gained<br>  the   ability to make calls within the app. 
-
-        </div>
-        </div>
-
+                    </div>
+               
+                <div class="right_side">
+                    <div class="galary">
+                    <tr class="image_content">
+                    <tr> <a href="http://www1.uwindsor.ca/bargainingunits/university-files-for-conciliation"><img src="css/images/image2.jpg" height="176px" width="287px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr><a href="http://www.uwindsor.ca/dailynews/2017-07-12/campers-hatch-plan-engineering-egg-drop"> <img src="css/images/galary4.jpg" height="176px" width="287px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <tr><a href="http://placeofpromise.ca/" ><img src="css/images/galary3.jpg" height="176px" width="287px"></a></tr>
+            <td> <a href="http://www.uwindsor.ca/dailynews/2017-06-23/math-project-streamline-companys-distribution-network"><img src="css/images/image4.jpg" height="176px" width="287px"></a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><a href="http://www1.uwindsor.ca/campusrec/forge-fitness-center-and-services"> <img src="css/images/galary5.jpg" height="176px" width="287px"></a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><a href="http://www1.uwindsor.ca/gss/"> <img src="css/images/galary6.jpg" height="176px" width="287px"></a></td>
+                    </tr>
+        
+                </div>
+                </div>
+            </div>
+  
+            
+      </div>
+      <div id="footer">
+		<div>
+			<div class="first">
+                            <h3><img src=""></h3>
+				
+				<div>
+					<p>Telephone. : <span>12345678-90</span></p>
+					<p>Fax : <span>23456789-01</span></p>
+					<p>Email : <span>ask@ecothunder.com</span></p>
+				</div>
+			</div>
+			<div>
+				<h3>Get Social with us!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat eleifend arcu, sit amet rutrum lectus lobortis quis. Donec aliquam</p>
+				<div>
+					<a href="http://facebook.com/freewebsitetemplates" class="facebook" target="_blank"></a>
+					<a href="http://twitter.com/fwtemplates" class="twitter" target="_blank"></a>
+					<a href="#" class="linked-in"></a>
+				</div>
+			</div>
+			<div>
+				<h3>Share your thoughts!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat eleifend arcu, sit amet rutrum lectus lobortis quis. Donec aliquam</p>
+				<form action="#">
+					<label for="subscribe"><input type="text" id="subscribe" maxlength="30" value="email address" /></label>
+					<input class="submit" type="submit" value="" />
+				</form>
+				<p>Copyright &copy; 2011  Ecothunder Incorporated <br />LRP 727 6783 83839 All rights reserved</p>
+			</div>
+		</div>
+      </div>
+               
     </body>
 </html>
-</html>
+
+         

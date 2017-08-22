@@ -80,118 +80,53 @@ width:auto;
 .body
 {
  font:left;
- height: 550px;
+ height: 950px;
  width: 100%;
- background-color: pink;
+ background-color: white;
 }
-.image1
+.first_div
+{float:left;
+  height:100%;
+  width:50%;
+background-color:white;
+font-family: "Open Sans";
+font-size: 20px;
+text-align: center;
+}
+.h1
 {
-    
-    height: 100%;
-    width:100%;
-    
-}
-.content
-{
-   float:left;
-    height:460px;
-    width:100%;
-  background: url(../css/images/bg-body.jpg);
-        
-}
-.left_side
-{   float:left;
-    height:auto;
-    width:20%;
-    text-align: center;
-   
-   background: url(../css/images/bg-body.jpg);
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 20px;
 }
 
-.regis_header
-{  margin: 50px 80px 10px 80px;
-   font-family:sans-serif;
-   color: white;
-   heigth:10%;
-    border-radius: 20px;
-  padding:10px 15px;
-   text-align: center;
-   box-sizing: border-box;
-   border: 1px double black; 
-   font-size: 12px;
-   background-color: cadetblue;
-}
-.form
-{ margin-top: 10px;
-    box-sizing:content-box;
-    padding: 20px 40px;
-   
-}
-.regis_text
-{
-    text-align: center;
-    color: black;
-    margin:2px 10px;
-   
-    font-size: 17px;
-    border:2px double black;
-    padding:5px 10px;
-     border-radius: 20px;
-     border: 2px solid black;
-}
-
-.Sign_indesign
-{
-   
-  float: left;
-  margin-left: 40px;
-   height: 20px;
-   width: 70%;
-   background-color: whitesmoke;
-   
-}
-.Sign_indesign1
-{ 
-    float: left;
-  margin-left: 40px;
-    height: 20px;
-   width: 70%;
-     background-color: whitesmoke;
-
-}
-.button_design
-{
-   float: left;
-  margin-left: 65px;
-  margin-top: -10px;
-    height: 30px;
-    width: 55%;
-background-color: lightseagreen;
-border-radius: 20px;
-}
-.right_side
-{   
-    height:460px;
-    width:80%;
-    float:right;
-    background: url(../css/images/bg-body.jpg);
- }
 .galary
 {
-  margin-top: 45px;
-  margin-left: 125px;
+   
+   
+    margin-left: 140px;
 }
-.image_content
-{   
-    float:left;
-    height:100px;
-    width:60px;
-}
-.galary_image
+.galary1
 {
-    height:100px;
-    width:60px;
+    float:left;
+    margin-left: 140px;
+    
 }
+
+.galary2
+{float:bottom;
+    margin-left: 140px;
+    
+    
+}
+
+.second_div
+{float:left;
+  height: 100%;
+  width:50%;
+ background-color: white;
+}
+
 #footer {
 	background: url(../css/images/footer_bg.jpg);
 	
